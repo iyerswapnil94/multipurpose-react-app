@@ -16,6 +16,7 @@ const routeCreater = (Component: React.ComponentType, routeConfig: IRoute) => ({
 const routeMap = [
   routeCreater(Home, routes.home),
   routeCreater(Home, routes.route1),
+  routeCreater(Home, routes.route2),
 ];
 
 const MainRoutesComponent: React.FunctionComponent<RouteComponentProps> = () => {

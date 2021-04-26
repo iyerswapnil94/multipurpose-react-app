@@ -18,12 +18,17 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.svg$/,
+        use: ["@svgr/webpack"],
+      },
     ],
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
     alias: {
       components: path.resolve(__dirname, "src/components"),
+      images: path.resolve(__dirname, "src/images"),
       src: path.join(__dirname, "src"),
     },
   },

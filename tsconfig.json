@@ -43,6 +43,7 @@
     "baseUrl": "src",
     "paths": {
       "components/*": ["components/*"],
+      "images/*": ["images/*"],
       "src/*": ["*"]
     },
     // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */

@@ -1,6 +1,6 @@
 import { Sidebar } from "components/SideBar/SideBar";
 import * as React from "react";
-// import { TopBar } from "components/TopBar";
+import { TopBar } from "components/TopBar";
 
 import { useStyles } from "./styles";
 
@@ -15,7 +15,7 @@ const BaseComponent: React.FC = ({ children }) => {
         className={classes.pageContainer}
         data-component="main-content-component"
       >
-        {/* <TopBar /> */}
+        <TopBar />
         <div className={classes.pageContent}>{children}</div>
       </main>
     </div>
