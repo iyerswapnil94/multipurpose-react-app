@@ -1,12 +1,19 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
-const htmlPlugin = new HtmlWebPackPlugin({
+const IndexHTMLWebpackPluginConfig = new HtmlWebPackPlugin({
   template: "./src/index.html",
+  filename: "index.html",
+  chunks: ["index"],
+  favicon: "./src/favicon.ico",
+  inject: true,
 });
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: {
+    index: path.join(__dirname, "/src/index.tsx"),
+  },
   module: {
     rules: [
       {
@@ -29,13 +36,13 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, "src/components"),
       images: path.resolve(__dirname, "src/images"),
+      store: path.resolve(__dirname, "src/store"),
       src: path.join(__dirname, "src"),
     },
   },
   output: {
-    filename: "[name].[contenthash].js",
+    filename: "[name].js",
     path: path.join(__dirname, "/build"),
-    publicPath: "/",
   },
   devServer: {
     contentBase: path.join(__dirname, "build"),
@@ -45,5 +52,8 @@ module.exports = {
     historyApiFallback: true,
   },
   mode: "development",
-  plugins: [htmlPlugin],
+  plugins: [
+    IndexHTMLWebpackPluginConfig,
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };

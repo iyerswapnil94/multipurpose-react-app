@@ -18,7 +18,6 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     sideBarContainer: {
       flex: 1,
-      cursor: "pointer",
       overflowX: "hidden",
       background: "#151530",
       padding: "20px 0",

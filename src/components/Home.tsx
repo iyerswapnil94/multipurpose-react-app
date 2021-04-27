@@ -8,8 +8,7 @@ export const Home: React.FC = () => {
         <div>
           The application contains multiple options to use UI based functions.
           <br />
-          This is created using React and as a part of learning various
-          components and libaries.
+          This is created using React to learn various components and libaries.
         </div>
       </section>
     </div>

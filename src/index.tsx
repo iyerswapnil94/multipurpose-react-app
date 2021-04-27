@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { App } from "./components/App";
+import { App } from "components/App";
+import { AppStore } from "store/configureStore";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const store = AppStore.getInstance({});
+ReactDOM.render(<App store={store}/>, document.getElementById("root"));

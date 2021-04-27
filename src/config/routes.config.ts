@@ -7,7 +7,7 @@ export interface IRoute {
 const home: IRoute = {
   to: "/",
   id: "home",
-  name: "home",
+  name: "Home",
 };
 const route1: IRoute = {
   to: "/route-1",

@@ -1,15 +1,26 @@
-import { Theme } from "@material-ui/core";
 import { createStyles } from "@material-ui/core/styles";
 
 export const styles = () =>
   createStyles({
-    sideBarList: {},
-    divider: {
-      backgroundColor: "#cbcefc",
+    sideBarList: {
+      marginTop: 20,
     },
-    selectedListItem: {},
+    divider: {
+      backgroundColor: "#252545",
+    },
+    listItem: {
+      padding: 15,
+      "&:hover": {
+        background: "#252545",
+        opacity: 0.6,
+      },
+    },
+    selectedListItem: {
+      background: "#252545",
+    },
     rotatingLogo: {
       animation: `$rotation 7s infinite linear`,
+      cursor: "pointer",
     },
     "@keyframes rotation": {
       from: {
