@@ -9,10 +9,10 @@ const home: IRoute = {
   id: "home",
   name: "Home",
 };
-const route1: IRoute = {
-  to: "/route-1",
-  id: "route1",
-  name: "Route 1",
+const apiData: IRoute = {
+  to: "/api-data",
+  id: "apiData",
+  name: "Fetch Data from APIs",
 };
 const route2: IRoute = {
   to: "/route-2",
@@ -21,7 +21,7 @@ const route2: IRoute = {
 };
 
 export const routes = {
-  route1,
+  apiData,
   route2,
   home,
 };

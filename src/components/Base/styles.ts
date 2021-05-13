@@ -1,5 +1,6 @@
 import { Theme } from "@material-ui/core";
 import { createStyles, makeStyles } from "@material-ui/core/styles";
+import { standardColors } from "src/config/colorConfig";
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -14,7 +15,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     baseContainer: {
       display: "flex",
       height: "100vh",
-      color: "#cbcefc",
+      color: standardColors.primary,
     },
     sideBarContainer: {
       flex: 1,
@@ -30,7 +31,6 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     pageContent: {
       height: "100%",
-      display: "flex",
       overflow: "auto",
       padding: 15,
     },

@@ -1,4 +1,4 @@
-import { AppBar } from "@material-ui/core";
+import { AppBar, Typography } from "@material-ui/core";
 import { WithStyles, withStyles } from "@material-ui/core/styles";
 import * as React from "react";
 import { RouteComponentProps, withRouter } from "react-router-dom";
@@ -19,7 +19,7 @@ const TopBarComponent: React.FunctionComponent<IProps> = ({
 
   return (
     <AppBar position="static" className={classes.appTopBar}>
-      <div>{heading}</div>
+      <Typography className={classes.appTitle}>{heading}</Typography>
     </AppBar>
   );
 };

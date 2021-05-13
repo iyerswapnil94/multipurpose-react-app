@@ -35,12 +35,12 @@ const SideBarComponent: React.FC<IProps> = ({ classes, location }) => {
         <ListItem
           className={classnames(
             classes.listItem,
-            location.pathname === routes.route1.to && classes.selectedListItem
+            location.pathname === routes.apiData.to && classes.selectedListItem
           )}
           button
-          onClick={switchUrl(routes.route1.to)}
+          onClick={switchUrl(routes.apiData.to)}
         >
-          <ListItemText primary={routes.route1.name} />
+          <ListItemText primary={routes.apiData.name} />
         </ListItem>
         <Divider className={classes.divider} />
         <ListItem

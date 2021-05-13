@@ -6,6 +6,7 @@ import {
   withRouter,
 } from "react-router-dom";
 import { IRoute, routes } from "../config/routes.config";
+import { ApiContainer } from "./APIData";
 import { Home } from "./Home";
 
 const routeCreater = (Component: React.ComponentType, routeConfig: IRoute) => ({
@@ -15,7 +16,7 @@ const routeCreater = (Component: React.ComponentType, routeConfig: IRoute) => ({
 
 const routeMap = [
   routeCreater(Home, routes.home),
-  routeCreater(Home, routes.route1),
+  routeCreater(ApiContainer, routes.apiData),
   routeCreater(Home, routes.route2),
 ];
 
