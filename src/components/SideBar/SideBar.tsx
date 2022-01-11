@@ -12,7 +12,7 @@ import {
   useHistory,
   withRouter,
 } from "react-router-dom";
-import ReactLogo from "images/reactJs-icon.svg";
+import ReactLogo from "images/reactjs-icon.svg";
 
 import { styles } from "./styles";
 import { routes } from "src/config/routes.config";
