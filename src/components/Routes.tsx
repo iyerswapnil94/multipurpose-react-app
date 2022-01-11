@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { IRoute, routes } from "../config/routes.config";
 import { ApiContainer } from "./APIData";
+import { SumGame } from "./SumGame";
 import { Home } from "./Home";
 
 const routeCreater = (Component: React.ComponentType, routeConfig: IRoute) => ({
@@ -17,10 +18,12 @@ const routeCreater = (Component: React.ComponentType, routeConfig: IRoute) => ({
 const routeMap = [
   routeCreater(Home, routes.home),
   routeCreater(ApiContainer, routes.apiData),
-  routeCreater(Home, routes.route2),
+  routeCreater(SumGame, routes.sumGame),
 ];
 
-const MainRoutesComponent: React.FunctionComponent<RouteComponentProps> = () => {
+const MainRoutesComponent: React.FunctionComponent<
+  RouteComponentProps
+> = () => {
   return (
     <Switch>
       <>

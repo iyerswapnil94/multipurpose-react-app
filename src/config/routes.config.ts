@@ -14,14 +14,14 @@ const apiData: IRoute = {
   id: "apiData",
   name: "Fetch Data from APIs",
 };
-const route2: IRoute = {
-  to: "/route-2",
-  id: "route2",
-  name: "Route 2",
+const sumGame: IRoute = {
+  to: "/sum-game",
+  id: "sumGame",
+  name: "Sum Game",
 };
 
 export const routes = {
   apiData,
-  route2,
+  sumGame,
   home,
 };
